@@ -1,13 +1,313 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Square+Peg&display=swap');
+body{
+  margin:0px;
+  padding: 0px;
+  
+  background-color: #ffffff;
+  font-family: 'Montserrat','Square Peg', sans-serif;
+  
+}
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bx::after{
+  content: 'BX';
+  color: #fff;
+  font-family: 'Square Peg';
+  font-weight: lighter;
+  font-size: 33px;
+  transition: 1s;
+}
+.bx:hover::after{
+  content: 'Baqir Ex';
+  font-size: 34px;
+  letter-spacing: 3px;
+  transition: 1s;
+}
+
+.dbx{
+  position: absolute;
+  display: flex;
+  left: 250px;
+  top: 18px;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 40px;
+  margin-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: montserrat;
+  font-weight: lighter;
+
+}
+
+.cool-link::after{
+ content: '';
+ display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+.cool-link:hover::after{
+  width: 100%;
+  transition: 0.3s;
+}
+
+.header{
+  height: 753px;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/background.jpg);
+}
+
+.head-content{
+  display: flex;
+  justify-content: center;
+}
+
+.heading{
+  margin-top: 220px;
+  color: #fff;
+  font-family: satisfy;
+  font-size: 48px;
+}
+
+.tagline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagline p{
+  color: #fff;
+  font-family: montserrat;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+.cool-button{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%,-50%);
+}
+
+button{
+  padding: 16px 42px;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: montserrat;
+  text-transform: uppercase;
+  background: rgb(0,0,0,0);
+  color: #fff;
+  border: #fff solid 1px;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.coffee{
+  width:100%;
+  height: 753px;
+  margin-top: 20px;
+  background-size: cover;
+  background-image: url(./images/coffee1.jpg);
+}
+
+.c-head{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  top: 10%;
+  color: white;
+}
+.c-head h1{
+  color: #fff;
+  font-family: satisfy;
+  font-size: 48px;
+}
+
+.tagline-1{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tagline-1 p{
+  color: #fff;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 12px;
+  font-size: 14px;
+}
+
+.features{
+  margin-top: 30px;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #17181a;
+}
+.card{
+  width: 400px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  border: #fff solid 1px;
+  transition: 0.5s;
+}
+.card:hover{
+  width: 410px;
+  height: 480px;
+  transition: 0.5s;
+}
+.card-image{
+  margin-top: 20px;
+}
+.card-image img{
+  transition: 0.8s;
+}
+.card-image img:hover{
+  width: 265px;
+  height: 315px;
+  transition: 0.8s;
+}
+
+
+.card-heading{
+  color: #fff;
+  font-family: satisfy;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.card-heading:hover{
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.card-detail{
+  color: #fff;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-size: 12px;
+  transition: 0.5s;
+}
+.card-detail:hover{
+  letter-spacing: 8px;
+  font-size: 10px;
+  transition: 0.5s;
+}
+
+.about{
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #17181a;
+}
+.about-border{
+  width: 800px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: #fff solid 1px;
+  transition: 0.5s;
+}
+.about-border:hover{
+  width: 810px;
+  height: 280px;
+  margin-top: 25px;
+  transition: 0.5s;
+}
+
+.about-head{
+  margin-top: 30px;
+  color: #fff;
+  font-family: satisfy;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.about-head:hover{
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.about-body{
+  width: 730px;
+  color: #fff;
+  font-family: montserrat;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-size: 11px;
+  transition: 0.5s;
+}
+
+.contacts{
+  background-color: #17181a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.contacts-in{
+  height:150px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #fff solid 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.contacts-in:hover{
+  height: 160px;
+  width: 610px;
+  margin-top: 25px;
+  transition: 0.5s;
+}
+
+.c-link{
+  text-decoration: none;
+  font-family: montserrat;
+  font-weight: 300;
+  text-transform: none;
+  margin: 0px;
+}
+.c-head{
+  color: #fff;
+  font-family: satisfy;
+  margin-bottom: 0px;
 }
